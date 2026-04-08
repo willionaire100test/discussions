@@ -1,0 +1,13 @@
+name: Print PR Title
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  print-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print pull request title
+        run: |
+          echo "PR Title: ${{ github.event.pull_request.title }}"
