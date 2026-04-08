@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Print pull request title
         run: |
-          echo "PR Title: '${{ github.event.pull_request.title }}'"
+          echo '${{ github.event.pull_request.title }}'
